@@ -21,26 +21,56 @@ To deploy this project run
 ```
 
 ```bash
-  run application using nodemon index.js
+  run application using nodemon app.js
 ```
 
 
 ## API Reference
 
-#### Get all user
+#### Get all movies
 
 ```http
-  GET /user
+  GET /movies
 ```
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `api_key` | `string` | **Required**. Your API key |
 
-#### Get user by id
+#### Get movies by id
 
 ```http
-  GET /user/id
+  GET /movies/id
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+
+#### POST insert movies 
+```http
+  POST /movies/
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+
+#### PUT update movies 
+```http
+  PUT /movies/id
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+
+#### PUT delete movies 
+```http
+  DELETE /movies/id
 ```
 
 | Parameter | Type     | Description                       |
